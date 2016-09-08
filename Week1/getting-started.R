@@ -20,34 +20,23 @@ colnames(fake.df)
 
 # Loading data into data frame
 education <- read.csv("2009education.csv", header=TRUE, sep=",", as.is=TRUE)
-library(dplyr)
 education[1,]		# First row
-slice(education, 1) # First row with dplyr
 education[1:10,]	# First ten rows
-slice(education, 1:10) # First ten rows with dplyr
 education$state		# First columnn
-select(education, state) # First columnn with dplyr
 education[,1]		# Also first column
-select(education,1) # Also first column with dplyr
 education[1,1]		# First cell
-slice(education, 1) %>%
-  select(1)       # First cell with dplyr(chaining)
 
 # Sort least to greatest
 high.order <- order(education$high)			
 education.high <- education[high.order,]
-head(education.high)
-# Sort least to greatest with dplyr
-arrange(education, high)
 
 # Sort greatest to least
 high.order <- order(education$high, decreasing=TRUE)
 education.high <- education[high.order,]
-head(education.high)
-# Sort greatest to least with dplyr
-head(arrange(education, desc(high)))
+
 
 ## Basic plotting
+
 plot(fakedata)
 plot(education)		# You get an error.
 plot(education.high$high)
@@ -92,3 +81,5 @@ barplot(education$high)
 barplot(education$high, names.arg=education$state, horiz=TRUE, las=1, cex.names=0.5, border=NA)
 boxplot(education$high)
 boxplot(education[,2:4])
+
+
