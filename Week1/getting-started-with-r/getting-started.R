@@ -81,5 +81,3 @@ barplot(education$high)
 barplot(education$high, names.arg=education$state, horiz=TRUE, las=1, cex.names=0.5, border=NA)
 boxplot(education$high)
 boxplot(education[,2:4])
-
-
