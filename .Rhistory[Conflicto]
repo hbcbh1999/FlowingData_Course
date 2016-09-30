@@ -1,0 +1,62 @@
+list.dirs()
+dir.create("Week1")
+file.copy(from = "/Users/fernandomillanvillalobos/Google Drive/Infografia_portable/R/FlowingData/Course/Week1/getting-started-with-r.R", to = "/Users/fernandomillanvillalobos/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/")
+list.dirs()
+list.files()
+unlink("/Users/fernandomillanvillalobos/Google Drive/Infografia_portable/R/FlowingData/Course/", recursive = TRUE)
+list.dirs()
+load("~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R")
+source('~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R')
+education <- read.csv("2009education.csv", header=TRUE, sep=",", as.is=TRUE)
+education[1,]		# First row
+source('~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R')
+library(dplyr)
+source('~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R')
+fakedata <- c(1,2,3,4,5)	# Assign to variable
+plot(fakedata)
+plot(education.high$high, type="l")	# Line
+plot(education.high$high, type="h")	# High-density
+barplot(education$high)
+list.files()
+load("~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R")
+load("~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R")
+list.dirs()
+stw
+swt
+ls()
+list.files()
+list.files(./Week1)
+list.files(/Week1)
+?list.files
+list.files(path = "/Week1")
+list.files(path = "/Week1/")
+list.files(path = "FlowingData_Course")
+list.files(path = "/Users/fernandomillanvillalobosmacbook/Google Drive/Infografia_portable/R/FlowingData")
+list.files(path = "/Users/fernandomillanvillalobosmacbook/Google Drive/Infografia_portable/R/FlowingData/Week1")
+file.remove(/Users/fernandomillanvillalobosmacbook/Google Drive/Infografia_portable/R/FlowingData/Week1/getting-started-with-r.R)
+file.remove("/Users/fernandomillanvillalobosmacbook/Google Drive/Infografia_portable/R/FlowingData/Week1/getting-started-with-r.R")
+file.remove("/Users/fernandomillanvillalobosmacbook/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started-with-r.R")
+list.files()
+list.files("/Users/fernandomillanvillalobosmacbook/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/")
+load("~/Google Drive/Infografia_portable/R/FlowingData/FlowingData_Course/Week1/getting-started.R")
+education <- read.csv("2009education.csv", header=TRUE, sep=",", as.is=TRUE)
+education[1,]		# First row
+education[1:10,]	# First ten rows
+boxplot(education$high)
+plot(education.high$high, type="s")	# Step
+plot(education.high$high)
+plot(education.high$high, type="h")	# High-density
+education.high <- education[high.order,]
+high.order <- order(education$high)
+education.high <- education[high.order,]
+high.order <- order(education$high, decreasing=TRUE)
+education.high <- education[high.order,]
+plot(education.high$high)
+plot(education.high$high, las=1)
+plot(education.high$state, education.high$high)
+plot(education.high$state, education.high$high)
+barplot(education$high)
+barplot(education$high, names.arg=education$state, horiz=TRUE, las=1, cex.names=0.5, border=NA)
+barplot(education$high)
+boxplot(education[,2:4])
+install.packages(c("curl", "DBI", "foreign", "jsonlite", "lattice", "lubridate", "Matrix", "mgcv", "quantreg", "Rcpp", "SparseM", "survey", "vcd"))
